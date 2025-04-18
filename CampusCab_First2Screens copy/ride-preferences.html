@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ride Preferences - CampusCab</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preferences-container">
+        <div class="preferences-header">
+            <a href="home.html" class="back-arrow">←</a>
+            <h1 class="preferences-title">Ride Preferences</h1>
+        </div>
+
+        <!-- Payment Method Section -->
+        <div class="preference-section">
+            <h2 class="section-title">Payment Method</h2>
+            <div class="payment-options">
+                <button class="payment-option active">
+                    <span class="payment-icon">💳</span>
+                    Visa
+                </button>
+                <button class="payment-option">
+                    <span class="payment-icon">💵</span>
+                    Cash
+                </button>
+                <button class="payment-option">
+                    <span class="payment-icon">📱</span>
+                    GPay
+                </button>
+            </div>
+        </div>
+
+        <!-- Pickup Time Section -->
+        <div class="preference-section">
+            <h2 class="section-title">Pick-up Time</h2>
+            <div class="pickup-options">
+                <button class="pickup-option active">
+                    <span class="pickup-icon">⏱️</span>
+                    Now
+                </button>
+                <a href="schedule-ride.html" class="pickup-option">
+                    <span class="pickup-icon">📅</span>
+                    Scheduled Ride
+                </a>
+                <button class="pickup-option">
+                    <span class="pickup-icon">🔄</span>
+                    Daily Ride
+                </button>
+            </div>
+        </div>
+
+        <!-- Choose a Trip Section -->
+        <div class="preference-section">
+            <h2 class="section-title">Choose a Trip</h2>
+            <div class="trip-options">
+                <button class="trip-option">
+                    <img src="sedan-icon.png" alt="Sedan" class="car-icon">
+                    <div class="trip-details">
+                        <span class="car-type">Sedan</span>
+                        <span class="price">$5</span>
+                        <span class="time">1.4</span>
+                    </div>
+                </button>
+                <button class="trip-option">
+                    <img src="suv-icon.png" alt="SUV" class="car-icon">
+                    <div class="trip-details">
+                        <span class="car-type">SUV</span>
+                        <span class="price">$5</span>
+                        <span class="time">1.4</span>
+                    </div>
+                </button>
+                <button class="trip-option">
+                    <img src="classic-icon.png" alt="Classic" class="car-icon">
+                    <div class="trip-details">
+                        <span class="car-type">Classic</span>
+                        <span class="price">$5</span>
+                        <span class="time">1.4</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Ride Type Toggles -->
+        <div class="ride-toggles">
+            <label class="toggle-option">
+                <span class="toggle-text">Solo Ride</span>
+                <input type="checkbox" class="toggle-input">
+                <span class="toggle-slider"></span>
+            </label>
+            <label class="toggle-option">
+                <span class="toggle-text">Car Pool</span>
+                <input type="checkbox" class="toggle-input">
+                <span class="toggle-slider"></span>
+            </label>
+            <label class="toggle-option">
+                <span class="toggle-text">Female-Only</span>
+                <input type="checkbox" class="toggle-input">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+
+        <!-- Redeem Points Button -->
+        <button class="redeem-points">
+            <span class="points-icon">🪙</span>
+            Redeem points
+        </button>
+
+        <!-- Logo -->
+        <div class="bottom-logo">
+            <h2 class="logo">CampusCab</h2>
+        </div>
+    </div>
+</body>
+</html> 

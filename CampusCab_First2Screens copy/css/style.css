@@ -1,0 +1,1229 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    min-height: 100vh;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    background: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-button {
+    background: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile optimization */
+@media (max-width: 430px) {
+    .mobile-container {
+        padding: 15px;
+    }
+    
+    .button-section {
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Verification page styles */
+.verification-container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.back-arrow {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.verification-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+    text-decoration: underline;
+    color: #333333;
+}
+
+.illustration {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 16px;
+}
+
+.verification-image {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+.verification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 16px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #666666;
+    background: #FFFFFF;
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23333333' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+}
+
+.form-group input::placeholder {
+    color: #999999;
+}
+
+.gender-options {
+    display: flex;
+    gap: 12px;
+}
+
+.gender-option {
+    flex: 1;
+}
+
+.gender-option input[type="radio"] {
+    display: none;
+}
+
+.gender-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666666;
+    background: #FFFFFF;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.gender-icon {
+    font-size: 18px;
+    color: #666666;
+}
+
+.gender-option input[type="radio"]:checked + .gender-button {
+    border-color: #333333;
+    background-color: #F8F8F8;
+}
+
+/* Mobile optimization */
+@media (max-width: 430px) {
+    .verification-container {
+        padding: 20px;
+    }
+    
+    .gender-options {
+        flex-wrap: wrap;
+    }
+    
+    .gender-option {
+        flex: 1 1 auto;
+        min-width: 120px;
+    }
+}
+
+.verification-form .button-section {
+    margin-top: 8px;
+    padding: 0;
+}
+
+.verification-form .primary-button {
+    background: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.verification-form .primary-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* File upload styles */
+.file-upload-container {
+    position: relative;
+    width: 100%;
+}
+
+.file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.file-upload-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666666;
+}
+
+.upload-icon {
+    font-size: 20px;
+    color: #666666;
+}
+
+.file-format-text {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 4px;
+}
+
+/* Consent checkbox styles */
+.consent-group {
+    margin-top: 8px;
+}
+
+.consent-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.consent-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.consent-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333333;
+}
+
+/* Verify button styles */
+.verify-button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #E0E0E0;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.verify-button:hover {
+    background: #D0D0D0;
+}
+
+/* Mobile optimization */
+@media (max-width: 430px) {
+    .verification-container {
+        padding: 20px;
+    }
+    
+    .file-upload-button {
+        padding: 14px;
+        font-size: 14px;
+    }
+    
+    .consent-text {
+        font-size: 13px;
+    }
+}
+
+/* Home page styles */
+.home-container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #2B2B3D;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Header styles */
+.home-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-button {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.settings-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.greeting-card {
+    background: #32324D;
+    border-radius: 24px;
+    padding: 24px;
+    color: #FFFFFF;
+}
+
+.greeting {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.user-name {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Search section styles */
+.search-section {
+    margin: 8px 0;
+}
+
+.search-bar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
+}
+
+.search-icon {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.search-input-wrapper input {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.search-input-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.time-dropdown {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Quick access carousel */
+.quick-access-container {
+    margin: 0 -24px;
+    padding: 0 24px;
+}
+
+.quick-access-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 4px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.quick-access-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.location-button {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.add-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    justify-content: center;
+}
+
+.plus-icon {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.location-icon {
+    font-size: 20px;
+}
+
+/* Map section */
+.map-section {
+    flex: 1;
+    position: relative;
+    margin: 0 -24px;
+    padding: 0 24px;
+}
+
+.available-cabs {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.loading-dots {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #666666;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+.map-container {
+    width: 100%;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.taxi-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+/* Ride Preferences Page Styles */
+.preferences-container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #FFFFFF;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.preferences-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.preferences-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    color: #333333;
+}
+
+.preference-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Payment Options */
+.payment-options {
+    display: flex;
+    gap: 16px;
+    padding: 4px 0;
+    margin-bottom: 8px;
+    width: 100%;
+    overflow-x: visible;
+}
+
+.payment-option {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    color: #333333;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.payment-option:hover {
+    border-color: #333333;
+    background: #F8F8F8;
+}
+
+.payment-option.active {
+    border-color: #333333;
+    background: #F8F8F8;
+}
+
+.payment-icon {
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pickup Options */
+.pickup-options {
+    display: flex;
+    gap: 12px;
+}
+
+.pickup-option {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pickup-option.active {
+    border-color: #333333;
+    background: #F8F8F8;
+}
+
+.pickup-icon {
+    font-size: 20px;
+}
+
+/* Trip Options */
+.trip-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trip-option {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.trip-option:hover {
+    border-color: #333333;
+    background: #F8F8F8;
+}
+
+.car-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.trip-details {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.car-type {
+    font-weight: 500;
+    min-width: 80px;
+}
+
+.price {
+    color: #666666;
+}
+
+.time {
+    color: #666666;
+}
+
+/* Toggle Switches */
+.ride-toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.toggle-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-text {
+    font-size: 16px;
+    color: #333333;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-slider {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background: #E0E0E0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.toggle-slider:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-slider {
+    background: #333333;
+}
+
+.toggle-input:checked + .toggle-slider:before {
+    transform: translateX(24px);
+}
+
+/* Redeem Points Button */
+.redeem-points {
+    background: #FFF9E5;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.points-icon {
+    font-size: 20px;
+}
+
+.bottom-logo {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.bottom-logo .logo {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: #333333;
+}
+
+/* Schedule Ride Page Styles */
+.schedule-container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #FFFFFF;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.schedule-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #2B2B3D;
+    margin: -24px;
+    padding: 24px;
+    border-radius: 0 0 24px 24px;
+}
+
+.schedule-header .back-arrow {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.schedule-title {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Location Input Styles */
+.location-inputs {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.location-markers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.pickup-marker {
+    color: #FFB800;
+    font-size: 24px;
+}
+
+.location-line {
+    width: 2px;
+    height: 24px;
+    background: #E0E0E0;
+    margin: 4px 0;
+}
+
+.drop-marker {
+    color: #2B2B3D;
+    font-size: 16px;
+}
+
+.input-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.location-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #F5F5F5;
+    font-size: 16px;
+    color: #333333;
+}
+
+.location-input::placeholder {
+    color: #999999;
+}
+
+/* Time Selection Styles */
+.time-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.time-tabs {
+    display: flex;
+    gap: 12px;
+    background: #F5F5F5;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.time-tab {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #666666;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-tab.active {
+    background: #FFFFFF;
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Time Picker Styles */
+.time-picker {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 24px;
+    background: #F5F5F5;
+    border-radius: 16px;
+}
+
+.time-column {
+    position: relative;
+    width: 80px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.time-column.meridiem {
+    width: 60px;
+}
+
+.time-scroll {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-option {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #999999;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-option.selected {
+    color: #333333;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* Date Selection Styles */
+.date-selection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.date-picker:hover {
+    border-color: #333333;
+    background: #F8F8F8;
+}
+
+.calendar-icon {
+    font-size: 20px;
+}
+
+/* Next Button */
+.next-button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #2B2B3D;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: auto;
+}
+
+.next-button:hover {
+    background: #373750;
+}
+
+/* Looking for Ride Page Styles */
+.looking-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ride-map-section {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background: #F5F5F5;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.looking-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 24px 24px 0 0;
+    padding: 24px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    height: 40vh;
+    overflow-y: auto;
+}
+
+.looking-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0 0 24px 0;
+}
+
+.location-details {
+    margin-bottom: 24px;
+}
+
+.location-markers {
+    display: flex;
+    gap: 16px;
+}
+
+.marker-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+    min-width: 24px;
+}
+
+.dot-marker {
+    color: #FFB800;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 24px;
+    background: #E0E0E0;
+    margin: 4px 0;
+}
+
+.map-marker {
+    color: #333333;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.location-inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.location-input {
+    background: #F5F5F5;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+}
+
+.location-input.destination {
+    color: #333333;
+}
+
+.ride-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.ride-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666666;
+}
+
+.passenger-count {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.passenger-count::before {
+    content: "👤";
+    font-size: 16px;
+}
+
+.ride-type {
+    font-size: 14px;
+}
+
+/* Map styles */
+.gm-style {
+    font-family: 'Inter', sans-serif;
+}
+
+.gm-style-iw {
+    padding: 12px;
+    border-radius: 12px;
+}

@@ -1,0 +1,71 @@
+#map {
+    width: 100%;
+    height: 60vh;
+}
+
+.ride-info-card {
+    position: relative;
+    top: -20px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 430px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+}
+
+.progress-bar {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #2ecc71, #2ecc71 60%, #ccc 60%);
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.ride-info-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.marker-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.marker-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.gray-line {
+    flex: 1;
+    height: 14px;
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.ride-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ride-meta {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #444;
+    gap: 4px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Schedule a Ride - CampusCab</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/schedule-ride.js" defer></script>
+</head>
+<body>
+    <div class="schedule-container">
+        <!-- Header -->
+        <div class="schedule-header">
+            <a href="ride-preferences.html" class="back-arrow">←</a>
+            <h1 class="schedule-title">Schedule a Ride</h1>
+        </div>
+
+        <!-- Location Inputs -->
+        <div class="location-inputs">
+            <div class="location-markers">
+                <div class="pickup-marker">●</div>
+                <div class="location-line"></div>
+                <div class="drop-marker">◆</div>
+            </div>
+            <div class="input-fields">
+                <input type="text" class="location-input" placeholder="Pickup location" required />
+                <input type="text" class="location-input" placeholder="Drop location" required />
+            </div>
+        </div>
+
+        <!-- Time Selection -->
+        <div class="time-selection">
+            <h2 class="section-title">Choose a time</h2>
+            <div class="time-tabs">
+                <button class="time-tab active">Pick-up at</button>
+                <button class="time-tab">Drop-off by</button>
+            </div>
+
+            <!-- Time Picker -->
+            <div class="time-picker">
+                <div class="time-column hours">
+                    <div class="time-scroll"></div>
+                </div>
+                <div class="time-column minutes">
+                    <div class="time-scroll"></div>
+                </div>
+                <div class="time-column meridiem">
+                    <div class="time-scroll"></div>
+                </div>
+            </div>
+
+            <!-- Date Selection -->
+            <div class="date-selection">
+                <h2 class="section-title">Date:</h2>
+                <button class="date-picker">
+                    <span class="calendar-icon">📅</span>
+                    Select Date
+                </button>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="next-button">Next</button>
+    </div>
+</body>
+</html> 

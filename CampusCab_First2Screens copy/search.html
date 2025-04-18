@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Search Ride</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js" defer></script>
+    <script src="js/search.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Search Your Ride</h2>
+        <form id="searchForm">
+            <input type="text" id="pickup" placeholder="Pickup Location" required />
+            <input type="text" id="destination" placeholder="Destination" required />
+            <div>
+                <label><input type="radio" name="rideType" value="solo" required /> Solo</label>
+                <label><input type="radio" name="rideType" value="carpool" /> Carpool</label>
+                <label><input type="radio" name="rideType" value="female" /> Female-only</label>
+            </div>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+
+</html>

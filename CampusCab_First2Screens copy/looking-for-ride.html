@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Looking for Ride - CampusCab</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <script src="js/looking-for-ride.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button">
+                <img src="assets/icons/back-arrow.svg" alt="Back">
+            </button>
+            <h1>Looking for Ride</h1>
+        </header>
+
+        <div id="map"></div>
+
+        <div class="controls-container">
+            <input type="text" id="location-input" class="location-input" placeholder="Enter your destination">
+            <button class="action-button">Confirm Location</button>
+        </div>
+    </div>
+</body>
+
+</html>

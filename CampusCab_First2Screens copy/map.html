@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Map View</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js" defer></script>
+    <script src="js/map.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Your Ride</h2>
+        <div id="map" style="width: 100%; height: 300px; background: #eee; margin: 20px 0;">Google Map Placeholder</div>
+        <p id="rideInfo"></p>
+        <button onclick="window.location.href='schedule-ride.html'">Schedule Ride</button>
+        <button onclick="window.location.href='finding-driver.html'">Instant Ride</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CampusCab</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="js/map.js" defer></script>
+</head>
+<body>
+    <div class="home-container">
+        <!-- Header Section -->
+        <div class="home-header">
+            <div class="header-top">
+                <h1 class="logo">CampusCab</h1>
+                <a href="ride-preferences.html" class="settings-button">⚙️</a>
+            </div>
+            <div class="greeting-card">
+                <p class="greeting">Good Morning,</p>
+                <p class="user-name">Tia</p>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Enter your destination" />
+                </div>
+                <button class="time-dropdown">
+                    Now
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Access Carousel -->
+        <div class="quick-access-container">
+            <div class="quick-access-scroll">
+                <button class="location-button add-button">
+                    <span class="plus-icon">+</span>
+                </button>
+                <button class="location-button">
+                    <span class="location-icon">🏠</span>
+                    Home
+                </button>
+                <button class="location-button">
+                    <span class="location-icon">🏋️</span>
+                    Gym
+                </button>
+                <button class="location-button">
+                    <span class="location-icon">🏢</span>
+                    Office
+                </button>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <div class="available-cabs">
+                <div class="loading-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <p>5 cabs are available</p>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-overlay">
+                    <img src="taxi img.png" alt="Taxi" class="taxi-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

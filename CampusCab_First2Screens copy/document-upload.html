@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document Upload</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</head>
+<body>
+    <div class="verification-container">
+        <div class="header">
+            <a href="student-verification.html" class="back-arrow">←</a>
+        </div>
+        
+        <div class="illustration">
+            <img src="image 19.png" alt="Student Verification Illustration" class="verification-image">
+        </div>
+
+        <form id="uploadForm" class="verification-form" onsubmit="event.preventDefault(); window.location.href='home.html';">
+            <div class="form-group">
+                <label>Upload College ID Card</label>
+                <div class="file-upload-container">
+                    <input type="file" id="collegeId" accept=".jpg,.jpeg,.pdf" required class="file-input" />
+                    <label for="collegeId" class="file-upload-button">
+                        <span class="upload-icon">↑</span>
+                        Upload front side of your valid student ID
+                    </label>
+                </div>
+                <span class="file-format-text">JPG or PDF, max 5MB</span>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Aadhaar Card</label>
+                <div class="file-upload-container">
+                    <input type="file" id="aadhaarCard" accept=".jpg,.jpeg,.pdf" required class="file-input" />
+                    <label for="aadhaarCard" class="file-upload-button">
+                        <span class="upload-icon">↑</span>
+                        Upload Aadhaar front with all details visible
+                    </label>
+                </div>
+                <span class="file-format-text">JPG or PDF, max 5MB</span>
+            </div>
+
+            <div class="form-group consent-group">
+                <label class="consent-label">
+                    <input type="checkbox" required class="consent-checkbox" />
+                    <span class="consent-text">
+                        I confirm the above information is true and consent to Aadhaar-based verification for CampusCab access.
+                    </span>
+                </label>
+            </div>
+
+            <div class="button-section">
+                <button type="submit" class="verify-button">Verify and Proceed</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html> 
